@@ -9,28 +9,38 @@ namespace MoodAnalyzerTest
     public class UnitTest1
     {
         [TestMethod]
-        [TestCategory("SAD Mood")]
+        [TestCategory("Happy Mood")]
         public void GivenMessageShouldReturnHappy()
         {
-            ///Follow AAA strategy
-            ///Arrange , Act and in last Assert
-            AnalyzeMood mood = new AnalyzeMood();
-            string message = "I am in Sad Mood";
-            string excepted = "SAD";
-            var actual = mood.Mood(message);
+           
+            AnalyzeMood mood = new AnalyzeMood("I am in Happy Mood");
+            string excepted = "happy";
+            var actual = mood.Mood();
             Assert.AreEqual(excepted, actual);
         }
         [TestMethod]
-        [TestCategory("HAPPY Mood")]
+        [TestCategory("SAD Mood")]
         public void GivenMessageShouldReturnSad()
         {
             ///Follow AAA strategy
             ///Arrange , Act and in last Assert
-            AnalyzeMood mood = new AnalyzeMood();
-            string message = "I am in Happy Mood";
-            string excepted = "SAD";
-            var actual = mood.Mood(message);
+            AnalyzeMood mood = new AnalyzeMood("I am in SAD Mood");
+            string excepted = "sad";
+            var actual = mood.Mood();
             Assert.AreEqual(excepted, actual);
         }
+        [TestMethod]
+        [TestCategory("Null")]
+        public void GivenNullShouldReturnHappy()
+        {
+            ///Follow AAA strategy
+            ///Arrange , Act and in last Assert
+            string message = null;
+            AnalyzeMood mood = new AnalyzeMood(message);
+            string excepted = "happy";
+            var actual = mood.Mood();
+            Assert.AreEqual(excepted, actual);
+        }
+
     }
 }

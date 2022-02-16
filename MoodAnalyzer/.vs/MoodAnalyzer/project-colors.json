@@ -5,7 +5,12 @@
       "ProjectGuid": "ea08bbca-adde-464a-9d4a-5f791f8ef671",
       "DisplayName": "MoodAnalyzer",
       "ColorIndex": 0
+    },
+    "23054f89-7a26-4777-803a-8230cef2a216": {
+      "ProjectGuid": "23054f89-7a26-4777-803a-8230cef2a216",
+      "DisplayName": "MoodAnalyzerTest",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
