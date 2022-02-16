@@ -27,8 +27,8 @@ namespace MoodAnalyzerTest
             ///Follow AAA strategy
             ///Arrange , Act and in last Assert
             AnalyzeMood mood = new AnalyzeMood();
-            string message = "I am in any Mood";
-            string excepted = "HAPPY";
+            string message = "I am in Happy Mood";
+            string excepted = "SAD";
             var actual = mood.Mood(message);
             Assert.AreEqual(excepted, actual);
         }
