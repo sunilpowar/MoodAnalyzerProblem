@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ea08bbca-adde-464a-9d4a-5f791f8ef671": {
+      "ProjectGuid": "ea08bbca-adde-464a-9d4a-5f791f8ef671",
+      "DisplayName": "MoodAnalyzer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
